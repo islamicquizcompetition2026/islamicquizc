@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Quiz 2026 | Farah Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --emerald-deep: #022c22; 
+            --emerald-mid: #064e3b;
+            --gold: #fbbf24;
+            --soft-white: #f8fafc;
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: var(--soft-white); 
+            color: #1e293b;
+            scroll-behavior: smooth;
+        }
+        .arabic-font { font-family: 'Amiri', serif; }
+        
+        /* Glassmorphism & Backgrounds */
+        .hero-section {
+            background: radial-gradient(circle at top right, rgba(6, 78, 59, 0.98), rgba(2, 44, 34, 1)), 
+                        url('https://www.transparenttextures.com/patterns/islamic-art.png');
+            background-attachment: fixed;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover { 
+            transform: translateY(-10px); 
+            border-color: var(--gold);
+            box-shadow: 0 40px 60px -15px rgba(6, 78, 59, 0.15);
+        }
+
+        .premium-input {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        .premium-input:focus {
+            background: white;
+            border-color: var(--emerald-mid);
+            box-shadow: 0 0 0 4px rgba(6, 78, 59, 0.05);
+            outline: none;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .badge-pulse {
+            animation: pulse-gold 2s infinite;
+        }
+        @keyframes pulse-gold {
+            0% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(251, 191, 36, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
+        }
+
+        .sher-container {
+            background: linear-gradient(to right, #022c22, #064e3b);
+            border-left: 8px solid #fbbf24;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: var(--emerald-mid); border-radius: 10px; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 w-full z-[100] bg-white/80 backdrop-blur-xl border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-emerald-900 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-xl">I</div>
+                <div class="leading-tight">
+                    <span class="block font-black text-slate-900 text-xl tracking-tighter uppercase">Islamic Donation</span>
+                    <span class="block text-[10px] font-bold text-emerald-700 uppercase tracking-[0.3em]">Farah Team</span>
+                </div>
+            </div>
+            <div class="hidden md:flex gap-10 items-center font-bold text-sm text-slate-600">
+                <a href="#about" class="hover:text-emerald-700 transition-colors uppercase tracking-widest">Maqsad</a>
+                <a href="#syllabus" class="hover:text-emerald-700 transition-colors uppercase tracking-widest">Syllabus</a>
+                <div class="flex flex-col items-end">
+                    <span class="text-[10px] text-emerald-600 font-black tracking-widest uppercase">Helpline</span>
+                    <a href="tel:7249942083" class="text-slate-900 hover:text-emerald-700 transition-colors">7249942083</a>
+                </div>
+                <a href="#register" class="bg-emerald-900 text-white px-8 py-3 rounded-2xl hover:bg-emerald-800 transition-all shadow-xl hover:scale-105 active:scale-95 uppercase tracking-widest">Register Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section pt-48 pb-40 px-6 text-center text-white relative overflow-hidden">
+        <div class="absolute top-20 left-10 opacity-10 rotate-12 float-anim hidden lg:block">
+            <div class="arabic-font text-[15rem]">قرآن</div>
+        </div>
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="inline-flex items-center gap-3 bg-white/10 border border-white/20 px-6 py-2.5 rounded-full mb-10 backdrop-blur-md badge-pulse">
+                <span class="w-2.5 h-2.5 bg-amber-400 rounded-full animate-ping"></span>
+                <span class="text-xs font-black uppercase tracking-[0.3em]">Muqabla 2026 - Registration Open</span>
+            </div>
+            <h1 class="text-7xl md:text-9xl font-black mb-10 tracking-tighter leading-[0.85]">
+                ISLAMIC QUIZ <br> <span class="gold-gradient-text">COMPETITION 2026</span>
+            </h1>
+            <p class="text-emerald-50 text-xl md:text-3xl font-light leading-relaxed max-w-4xl mx-auto mb-10 italic">
+                "Bismillah-ir-Rahman-ir-Rahim. Is competition ka maqsad hamari nayi nasal mein Deen ki sahi samajh paida karna aur unke ilm ko badhava dena hai."
+            </p>
+            
+            <div class="max-w-2xl mx-auto mb-16 p-8 rounded-3xl sher-container shadow-2xl">
+                <p class="arabic-font text-3xl md:text-4xl mb-4 text-amber-400 leading-relaxed">
+                    "Ilm ki shama se dunya ko munawwar kar dein, <br> Har dil mein deen ki ik nayi roshni bhar dein."
+                </p>
+                <div class="w-20 h-1 bg-amber-400 mx-auto rounded-full opacity-50"></div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="#register" class="group bg-amber-400 text-emerald-950 px-12 py-6 rounded-3xl font-black text-xl shadow-2xl hover:bg-white transition-all w-full sm:w-auto uppercase tracking-widest flex items-center justify-center gap-3">
+                    Register Now
+                    <span class="group-hover:translate-x-2 transition-transform">→</span>
+                </a>
+                <a href="#syllabus" class="bg-white/10 border border-white/30 px-12 py-6 rounded-3xl font-bold text-xl backdrop-blur-md hover:bg-white/20 transition-all w-full sm:w-auto uppercase tracking-widest">
+                    View Syllabus
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 -mt-20 pb-32">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+            <div class="glass-card p-10 rounded-[3rem] text-center border-t-8 border-amber-400">
+                <div class="w-20 h-20 bg-amber-50 text-amber-500 rounded-3xl flex items-center justify-center text-4xl mx-auto mb-6 shadow-sm">🏆</div>
+                <h3 class="text-2xl font-black mb-3">Shandaar Prizes</h3>
+                <p class="text-slate-500 font-medium">Trophy aur Cash Prizes jeetne ka sunhera mauka!</p>
+            </div>
+            <div class="glass-card p-10 rounded-[3rem] text-center border-t-8 border-emerald-500">
+                <div class="w-20 h-20 bg-emerald-50 text-emerald-600 rounded-3xl flex items-center justify-center text-4xl mx-auto mb-6 shadow-sm">📍</div>
+                <h3 class="text-2xl font-black mb-3">Muqam (Center)</h3>
+                <p class="text-slate-500 font-medium">Nizamuddin Inter College, Farah (Mathura).</p>
+            </div>
+            <div class="glass-card p-10 rounded-[3rem] text-center border-t-8 border-emerald-900">
+                <div class="w-20 h-20 bg-slate-50 text-emerald-900 rounded-3xl flex items-center justify-center text-4xl mx-auto mb-6 shadow-sm">📅</div>
+                <h3 class="text-2xl font-black mb-3">Aakhri Tareekh</h3>
+                <p class="text-slate-500 font-medium">27 Feb 2026 tak registration zaroori hai.</p>
+            </div>
+        </div>
+
+        <div class="mb-24 bg-white rounded-[4rem] p-12 md:p-20 shadow-xl border border-slate-100 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/3">
+                <div class="w-48 h-48 bg-emerald-900 rounded-[3rem] flex items-center justify-center text-white text-6xl font-black shadow-2xl mx-auto">IDF</div>
+            </div>
+            <div class="md:w-2/3 space-y-6">
+                <div class="inline-block bg-amber-100 text-amber-800 px-6 py-2 rounded-2xl text-xs font-black uppercase tracking-[0.3em]">Muntazimeen (Organizers)</div>
+                <h2 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter">Islamic Donation <br><span class="text-emerald-800">Farah Team</span></h2>
+                <p class="text-slate-500 text-xl leading-relaxed font-medium">
+                    Yah Islamic Quiz Competition <strong>Islamic Donation Farah Team</strong> ke zariye conduct kiya ja raha hai. Hamari team Farah aur aas-paas ke ilaqon mein deeni malumaat aur samajik bhalayi ke kaamon ke liye hamesha koshish karti hai. 
+                </p>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-16 items-start">
+            <div class="lg:col-span-7 space-y-24">
+                <section id="about" class="space-y-10">
+                    <div class="space-y-4">
+                        <div class="inline-block bg-emerald-100 text-emerald-800 px-6 py-2 rounded-2xl text-xs font-black uppercase tracking-[0.3em]">Humar Maqsad (Mission)</div>
+                        <h2 class="text-5xl font-black text-slate-900 tracking-tighter leading-tight">Deen Ki Roshni Ko <br> Aam Karna</h2>
+                    </div>
+                    
+                    <div class="grid gap-8">
+                        <div class="group flex gap-8 p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:border-emerald-200 hover:shadow-xl transition-all">
+                            <div class="text-5xl group-hover:scale-110 transition-transform">📖</div>
+                            <div>
+                                <h4 class="font-black text-xl mb-2 text-slate-900">Deeni Malumaat</h4>
+                                <p class="text-slate-500 leading-relaxed font-medium text-lg">Quran aur Sunnat ki buniyadi baatein seekhna aur samajhna.</p>
+                            </div>
+                        </div>
+                        <div class="group flex gap-8 p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:border-emerald-200 hover:shadow-xl transition-all">
+                            <div class="text-5xl group-hover:scale-110 transition-transform">🧠</div>
+                            <div>
+                                <h4 class="font-black text-xl mb-2 text-slate-900">Knowledge (Ilm)</h4>
+                                <p class="text-slate-500 leading-relaxed font-medium text-lg">Mahan Islamic tareekh (History) se waqif hona aur sabaq lena.</p>
+                            </div>
+                        </div>
+                        <div class="group flex gap-8 p-8 rounded-[2.5rem] bg-white border border-slate-100 hover:border-emerald-200 hover:shadow-xl transition-all">
+                            <div class="text-5xl group-hover:scale-110 transition-transform">🌍</div>
+                            <div>
+                                <h4 class="font-black text-xl mb-2 text-slate-900">Awareness (Bedari)</h4>
+                                <p class="text-slate-500 leading-relaxed font-medium text-lg">Aaj ke daur mein hamari zimmedariyon ko samajhna aur un par amal karna.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="syllabus" class="space-y-10">
+                    <div class="bg-emerald-950 rounded-[4rem] p-12 text-white shadow-2xl relative overflow-hidden">
+                        <div class="absolute -bottom-10 -right-10 p-10 opacity-5 text-[15rem] arabic-font">علم</div>
+                        <div class="relative z-10">
+                            <h3 class="text-4xl font-black mb-12 flex items-center gap-4">
+                                <span class="w-12 h-1.5 bg-amber-400 rounded-full"></span>
+                                Quiz Syllabus
+                            </h3>
+                            <div class="space-y-6">
+                                <div class="p-8 bg-white/5 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors group">
+                                    <h4 class="text-amber-400 font-black uppercase text-sm tracking-widest">📖 Qur’an (Basic Knowledge)</h4>
+                                    <p class="text-lg text-emerald-100/80 font-medium">Qur’an kya hai, kis par nazil hui, Surah aur Para ki jankari.</p>
+                                </div>
+                                <div class="p-8 bg-white/5 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors group">
+                                    <h4 class="text-amber-400 font-black uppercase text-sm tracking-widest mb-2">🕋 Seerat-un-Nabi ﷺ</h4>
+                                    <p class="text-lg text-emerald-100/80 font-medium">Nabi ﷺ ki pedais, hijrat, jung, aur unke Achha akhlaq.</p>
+                                </div>
+                                <div class="p-8 bg-white/5 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors group">
+                                    <h4 class="text-amber-400 font-black uppercase text-sm tracking-widest mb-2">🌙 Islamic History</h4>
+                                    <p class="text-lg text-emerald-100/80 font-medium">Makkah–Madine ki tareekh aur Khilafat-e-Rashida ke sunhere kaam.</p>
+                                </div>
+                                <div class="p-8 bg-white/5 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors group">
+                                    <h4 class="text-amber-400 font-black uppercase text-sm tracking-widest mb-2">📿 Basic Fiqh & Akhlaq</h4>
+                                    <p class="text-lg text-emerald-100/80 font-medium">Namaz, Roza, Wuzu, Halal-Haram, adab-o-akhlaq.</p>
+                                </div>
+                                <!-- Added NEW badge to make it visible -->
+                                <div class="p-8 bg-white/5 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors group">
+                                    <h4 class="text-amber-400 font-black uppercase text-sm tracking-widest mb-2 flex items-center gap-2">
+                                        🌍 Islamic General Knowledge
+                                        <span class="bg-amber-400 text-emerald-950 px-2 py-0.5 rounded text-[10px] font-bold"></span>
+                                    </h4>
+                                    <p class="text-lg text-emerald-100/80 font-medium">
+– Islamic mahine, Ambiya ke naam, Farishte, aur duayein.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="register" class="lg:col-span-5">
+                <div class="glass-card rounded-[3.5rem] p-10 md:p-12 sticky top-28 border-2 border-emerald-900/5 shadow-3xl">
+                    <div class="text-center mb-12">
+                        <div class="arabic-font text-6xl text-emerald-900 mb-4">بِسْمِ اللّٰهِ</div>
+                        <h3 class="text-3xl font-black text-slate-900 uppercase tracking-tighter">Registration</h3>
+                        <p class="text-emerald-600 text-xs font-black mt-2 tracking-[0.4em] uppercase">Competition Entry 2026</p>
+                    </div>
+
+                    <form id="regForm" class="space-y-6">
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-5">Full Name (Pura Naam)</label>
+                            <input type="text" id="name" required placeholder="Enter your name" class="premium-input w-full rounded-2xl px-7 py-5 font-bold text-lg">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-5">Father's Name (Walid ka Naam)</label>
+                            <input type="text" id="father" required placeholder="Enter Father's Name" class="premium-input w-full rounded-2xl px-7 py-5 font-bold text-lg">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-5">WhatsApp Number</label>
+                            <input type="tel" id="phone" required placeholder="Enter the WhatsApp number" class="premium-input w-full rounded-2xl px-7 py-5 font-bold text-lg">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-5">Masjid / Maktab</label>
+                            <input type="text" id="school" required placeholder="Apne Masjid ya maktab ka naam bharein" class="premium-input w-full rounded-2xl px-7 py-5 font-bold text-lg">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-5">Address (Pata)</label>
+                            <textarea id="address" rows="3" required placeholder="Mohalla, Gali, Shehar..." class="premium-input w-full rounded-3xl px-7 py-5 font-bold text-lg resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="w-full bg-emerald-900 text-white font-black py-6 rounded-3xl text-2xl shadow-2xl hover:bg-emerald-800 transition-all hover:scale-[1.02] active:scale-[0.98] mt-8 uppercase tracking-widest">
+                            Register Now
+                        </button>
+                    </form>
+
+                    <div class="mt-12 pt-10 border-t border-slate-100 flex items-center justify-between">
+                        <div class="text-left">
+                            <p class="text-[10px] text-slate-400 font-black tracking-widest uppercase">Helpline Support</p>
+                            <a href="tel:7249942083" class="font-black text-xl text-slate-900 hover:text-emerald-700">7249942083</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 py-24">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h4 class="text-3xl font-black text-slate-900 mb-4 tracking-tighter uppercase text-emerald-900">Islamic Donation Farah Team</h4>
+            <p class="text-slate-400 text-xs font-black uppercase tracking-[0.4em]">Farah, Mathura, UP • Established 2023</p>
+        </div>
+    </footer>
+
+    <div id="successMsg" class="fixed inset-0 bg-emerald-950/90 backdrop-blur-xl hidden z-[200] flex items-center justify-center p-6">
+        <div class="bg-white rounded-[4rem] p-16 max-w-lg w-full text-center shadow-3xl">
+            <div class="w-32 h-32 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center text-6xl mx-auto mb-10 animate-bounce">✓</div>
+            <h3 class="text-4xl font-black text-slate-900 mb-4 tracking-tighter">Mubarak Ho!</h3>
+            <p class="text-slate-500 text-xl font-medium mb-12 leading-relaxed">Aapka registration kamyabi se save ho gaya hai. Hum jald hi aapse WhatsApp par rabta karenge.</p>
+            <button onclick="location.reload()" class="bg-emerald-950 text-white w-full py-6 rounded-3xl font-black text-xl shadow-2xl hover:bg-emerald-800 transition-all uppercase tracking-widest">Theek Hai</button>
+        </div>
+    </div>
+
+    <script type="module">
+        // Updated Database Link (SheetDB API)
+        const apiURL = 'https://sheetdb.io/api/v1/mlajqnn95pufs';
+
+        document.getElementById("regForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById("submitBtn");
+            
+            btn.disabled = true;
+            btn.innerHTML = `<span class="inline-block animate-spin mr-3">◌</span> SAVING DATA...`;
+
+            // Data Mapping to Sheet Columns
+            const data = {
+                data: [{
+                    "Name": document.getElementById("name").value,
+                    "Father_Name": document.getElementById("father").value,
+                    "WhatsApp": document.getElementById("phone").value,
+                    "Masjid_Maktab": document.getElementById("school").value,
+                    "Address": document.getElementById("address").value,
+                    "Date": new Date().toLocaleString('en-IN')
+                }]
+            };
+
+            try {
+                const response = await fetch(apiURL, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+                
+                if (result.created === 1 || response.ok) {
+                    document.getElementById("successMsg").classList.remove("hidden");
+                } else {
+                    alert("Kshama karein! Data save nahi ho paya. Dobara koshish karein.");
+                }
+            } catch (err) {
+                console.error("Database Error:", err);
+                alert("Server Connection Error! Internet check karein.");
+            } finally {
+                btn.disabled = false;
+                btn.innerText = "Register Now";
+            }
+        });
+    </script>
+</body>
+</html>
